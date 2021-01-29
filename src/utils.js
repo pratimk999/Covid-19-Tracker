@@ -5,7 +5,7 @@ import { Circle, Popup } from "react-leaflet";
 export const sortData = (data) => {
   const sortedData = [...data];
 
-  return sortedData.sort((a, b) => (a.cases > b.cases ? -1 : 1));
+  return sortedData.sort((a, b) => (a.active > b.active ? -1 : 1));
 };
 
 const casesTypeColors = {
